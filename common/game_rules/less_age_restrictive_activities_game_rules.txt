@@ -1,0 +1,101 @@
+﻿
+min_activity_age = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = min_activity_age_sixteen
+	min_activity_age_eight = {}
+	min_activity_age_nine = {}
+	min_activity_age_ten = {}
+	min_activity_age_eleven = {}
+	min_activity_age_twelve = {}
+	min_activity_age_thirteen = {}
+	min_activity_age_fourteen = {}
+	min_activity_age_fifteen = {}
+	min_activity_age_sixteen = {}
+}
+
+min_coronation_age = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = min_coronation_age_twelve
+	min_coronation_age_six = {}
+	min_coronation_age_seven = {}
+	min_coronation_age_eight = {}
+	min_coronation_age_nine = {}
+	min_coronation_age_ten = {}
+	min_coronation_age_eleven = {}
+	min_coronation_age_twelve = {}
+}
+
+inspection_unlock = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = inspection_unlock_perk
+	inspection_unlock_perk = {}
+	inspection_unlock_perk_or_child = {}
+	inspection_unlock_focus = {}
+	inspection_unlock_focus_or_child = {}
+	inspection_unlock_none = {}
+}
+
+hike_unlock = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = hike_unlock_perk
+	hike_unlock_perk = {}
+	hike_unlock_perk_or_child = {}
+	hike_unlock_focus = {}
+	hike_unlock_focus_or_child = {}
+	hike_unlock_none = {}
+}
+
+monument_expedition_unlock = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = monument_expedition_unlock_perk
+	monument_expedition_unlock_perk = {}
+	monument_expedition_unlock_perk_or_child = {}
+	monument_expedition_unlock_focus = {}
+	monument_expedition_unlock_focus_or_child = {}
+	monument_expedition_unlock_none = {}
+}
+
+tour_admin_unlock = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = tour_admin_unlock_no
+	tour_admin_unlock_no = {}
+	tour_admin_unlock_yes = {}
+}
+
+adventurer_cultural_unlock = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = adventurer_cultural_unlock_default
+	adventurer_cultural_unlock_default = {}
+	adventurer_cultural_unlock_relaxed = {}
+	adventurer_cultural_unlock_player_only = {}
+	adventurer_cultural_unlock_free = {}
+}
+
+adventurer_martial_unlock = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = adventurer_martial_unlock_default
+	adventurer_martial_unlock_default = {}
+	adventurer_martial_unlock_relaxed = {}
+	adventurer_martial_unlock_player_only = {}
+	adventurer_martial_unlock_free = {}
+}
+
+adventurer_roaming_unlock = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = adventurer_martial_unlock_default
+	adventurer_roaming_unlock_default = {}
+	adventurer_roaming_unlock_relaxed = {}
+	adventurer_roaming_unlock_player_only = {}
+	adventurer_roaming_unlock_free = {}
+}
+
+adventurer_domain_unlock = {
+	categories = { tweaks less_age_restrictive_activities }
+	default = adventurer_domain_unlock_default
+	adventurer_domain_unlock_default = {}
+	adventurer_domain_unlock_extreme_scaled = {}
+	adventurer_domain_unlock_high_scaled = {}
+	adventurer_domain_unlock_low_scaled = {}
+	adventurer_domain_unlock_player_only = {}
+	adventurer_domain_unlock_free = {}
+}

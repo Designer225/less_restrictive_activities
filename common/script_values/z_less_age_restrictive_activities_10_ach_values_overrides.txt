@@ -1,0 +1,28 @@
+﻿
+coronation_minimum_age_value = {
+	value = 12
+	if = {
+		limit = { has_game_rule = min_coronation_age_six }
+		value = 6
+	}
+	else_if = {
+		limit = { has_game_rule = min_coronation_age_seven }
+		value = 7
+	}
+	else_if = {
+		limit = { has_game_rule = min_coronation_age_eight }
+		value = 8
+	}
+	else_if = {
+		limit = { has_game_rule = min_coronation_age_nine }
+		value = 9
+	}
+	else_if = {
+		limit = { has_game_rule = min_coronation_age_ten }
+		value = 10
+	}
+	else_if = {
+		limit = { has_game_rule = min_coronation_age_eleven }
+		value = 11
+	}
+}

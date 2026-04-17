@@ -1,0 +1,208 @@
+﻿
+min_activity_age = {
+	value = 16
+	if = {
+		limit = { has_game_rule = min_activity_age_eight }
+		value = 8
+	}
+	else_if = {
+		limit = { has_game_rule = min_activity_age_nine }
+		value = 9
+	}
+	else_if = {
+		limit = { has_game_rule = min_activity_age_ten }
+		value = 10
+	}
+	else_if = {
+		limit = { has_game_rule = min_activity_age_eleven }
+		value = 11
+	}
+	else_if = {
+		limit = { has_game_rule = min_activity_age_twelve }
+		value = 12
+	}
+	else_if = {
+		limit = { has_game_rule = min_activity_age_thirteen }
+		value = 13
+	}
+	else_if = {
+		limit = { has_game_rule = min_activity_age_fourteen }
+		value = 14
+	}
+	else_if = {
+		limit = { has_game_rule = min_activity_age_fifteen }
+		value = 15
+	}
+}
+
+# become adventurer
+become_adventurer_gold_cost = {
+	value = 0
+	if = {
+		limit = {
+			has_game_rule = adventurer_cultural_unlock_relaxed
+			become_adventurer_default_cultural_trigger = no
+		}
+		add = 40
+		add = {
+			value = highest_held_title_tier
+			multiply = 10
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = adventurer_martial_unlock_relaxed
+			save_temporary_scope_as = potential_laamp_temp
+			become_adventurer_default_martial_trigger = no
+		}
+		add = 40
+		add = {
+			value = highest_held_title_tier
+			multiply = 10
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = adventurer_roaming_unlock_relaxed
+			become_adventurer_default_roaming_trigger = no
+		}
+		add = 40
+		add = {
+			value = highest_held_title_tier
+			multiply = 10
+		}
+	}
+}
+
+become_adventurer_prestige_cost = {
+	value = 0
+	if = {
+		limit = {
+			has_game_rule = adventurer_cultural_unlock_relaxed
+			become_adventurer_default_cultural_trigger = no
+		}
+		add = {
+			value = highest_held_title_tier
+			multiply = 10
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = adventurer_martial_unlock_relaxed
+			save_temporary_scope_as = potential_laamp_temp
+			become_adventurer_default_martial_trigger = no
+		}
+		add = {
+			value = highest_held_title_tier
+			multiply = 10
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = adventurer_roaming_unlock_relaxed
+			become_adventurer_default_roaming_trigger = no
+		}
+		add = {
+			value = highest_held_title_tier
+			multiply = 10
+		}
+	}
+}
+
+become_adventurer_piety_cost = {
+	value = 0
+	if = {
+		limit = {
+			has_game_rule = adventurer_cultural_unlock_relaxed
+			become_adventurer_default_cultural_trigger = no
+		}
+		add = {
+			value = highest_held_title_tier
+			multiply = 20
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = adventurer_martial_unlock_relaxed
+			save_temporary_scope_as = potential_laamp_temp
+			become_adventurer_default_martial_trigger = no
+		}
+		add = {
+			value = highest_held_title_tier
+			multiply = 20
+		}
+	}
+	if = {
+		limit = {
+			has_game_rule = adventurer_roaming_unlock_relaxed
+			become_adventurer_default_roaming_trigger = no
+		}
+		add = {
+			value = highest_held_title_tier
+			multiply = 20
+		}
+	}
+}
+
+become_adventurer_domain_gold_cost = {
+	value = domain_size_excluding_grace_period
+	subtract = 3
+	min = 0
+	if = {
+		limit = { has_game_rule = adventurer_domain_unlock_extreme_scaled }
+		multiply = 10000
+	}
+	else_if = {
+		limit = { has_game_rule = adventurer_domain_unlock_high_scaled }
+		multiply = 2500
+	}
+	else_if = {
+		limit = { has_game_rule = adventurer_domain_unlock_low_scaled }
+		multiply = 500
+	}
+	else = {
+		multiply = 0
+	}
+}
+
+become_adventurer_domain_prestige_cost = {
+	value = domain_size_excluding_grace_period
+	subtract = 3
+	min = 0
+	if = {
+		limit = { has_game_rule = adventurer_domain_unlock_extreme_scaled }
+		multiply = 2000
+	}
+	else_if = {
+		limit = { has_game_rule = adventurer_domain_unlock_high_scaled }
+		multiply = 500
+	}
+	else_if = {
+		limit = { has_game_rule = adventurer_domain_unlock_low_scaled }
+		multiply = 100
+	}
+	else = {
+		multiply = 0
+	}
+}
+
+become_adventurer_domain_piety_cost = {
+	value = domain_size_excluding_grace_period
+	subtract = 3
+	min = 0
+	if = {
+		limit = { has_game_rule = adventurer_domain_unlock_extreme_scaled }
+		multiply = 2000
+	}
+	else_if = {
+		limit = { has_game_rule = adventurer_domain_unlock_high_scaled }
+		multiply = 500
+	}
+	else_if = {
+		limit = { has_game_rule = adventurer_domain_unlock_low_scaled }
+		multiply = 100
+	}
+	else = {
+		multiply = 0
+	}
+}
