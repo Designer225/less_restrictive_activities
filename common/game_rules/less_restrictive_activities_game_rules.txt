@@ -1,6 +1,6 @@
 ﻿
 min_activity_age = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = min_activity_age_sixteen
 	min_activity_age_eight = {}
 	min_activity_age_nine = {}
@@ -14,7 +14,7 @@ min_activity_age = {
 }
 
 min_coronation_age = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = min_coronation_age_twelve
 	min_coronation_age_six = {}
 	min_coronation_age_seven = {}
@@ -26,7 +26,7 @@ min_coronation_age = {
 }
 
 inspection_unlock = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = inspection_unlock_perk
 	inspection_unlock_perk = {}
 	inspection_unlock_perk_or_child = {}
@@ -36,7 +36,7 @@ inspection_unlock = {
 }
 
 hike_unlock = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = hike_unlock_perk
 	hike_unlock_perk = {}
 	hike_unlock_perk_or_child = {}
@@ -46,7 +46,7 @@ hike_unlock = {
 }
 
 monument_expedition_unlock = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = monument_expedition_unlock_perk
 	monument_expedition_unlock_perk = {}
 	monument_expedition_unlock_perk_or_child = {}
@@ -56,14 +56,14 @@ monument_expedition_unlock = {
 }
 
 tour_admin_unlock = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = tour_admin_unlock_no
 	tour_admin_unlock_no = {}
 	tour_admin_unlock_yes = {}
 }
 
 adventurer_cultural_unlock = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = adventurer_cultural_unlock_default
 	adventurer_cultural_unlock_default = {}
 	adventurer_cultural_unlock_relaxed = {}
@@ -72,7 +72,7 @@ adventurer_cultural_unlock = {
 }
 
 adventurer_martial_unlock = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = adventurer_martial_unlock_default
 	adventurer_martial_unlock_default = {}
 	adventurer_martial_unlock_relaxed = {}
@@ -81,7 +81,7 @@ adventurer_martial_unlock = {
 }
 
 adventurer_roaming_unlock = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = adventurer_martial_unlock_default
 	adventurer_roaming_unlock_default = {}
 	adventurer_roaming_unlock_relaxed = {}
@@ -90,7 +90,7 @@ adventurer_roaming_unlock = {
 }
 
 adventurer_domain_unlock = {
-	categories = { tweaks less_age_restrictive_activities }
+	categories = { tweaks less_restrictive_activities }
 	default = adventurer_domain_unlock_default
 	adventurer_domain_unlock_default = {}
 	adventurer_domain_unlock_extreme_scaled = {}

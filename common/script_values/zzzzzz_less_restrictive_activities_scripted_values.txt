@@ -1,5 +1,5 @@
 ﻿
 # define this value (with value set to 0) and let this mod override, if you need this value for compatibility reasons
-is_less_age_restrictive_activities_active = {
+is_less_restrictive_activities_active = {
 	value = 1
 }

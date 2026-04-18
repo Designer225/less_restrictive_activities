@@ -1,5 +1,5 @@
 ﻿l_english:
- game_rule_category_less_age_restrictive_activities:0 "Less Age-Restrictive [activities|E]"
+ game_rule_category_less_restrictive_activities:0 "Less Age-Restrictive [activities|E]"
  
  rule_min_activity_age:0 "Minimum Age to Join Activity"
  setting_min_activity_age_eight:0 "8"

@@ -4,5 +4,5 @@ tags={
 	"Gameplay"
 	"Character Interactions"
 }
-name="Less Age-Restrictive Activities"
+name="Less Restrictive Activities"
 supported_version="1.18.4"
