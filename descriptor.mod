@@ -1,8 +1,8 @@
-version="0.1.0"
+version="1.0.0"
 tags={
-	"1.18 'Crane'"
+	"1.19 'Scribe'"
 	"Gameplay"
 	"Character Interactions"
 }
 name="Less Restrictive Activities"
-supported_version="1.18.4"
+supported_version="1.19.*"
