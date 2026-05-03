@@ -1,5 +1,5 @@
 ﻿l_english:
- game_rule_category_less_restrictive_activities:0 "Less Age-Restrictive [activities|E]"
+ game_rule_category_less_restrictive_activities:0 "Less Restrictive [activities|E]"
  
  rule_min_activity_age:0 "Minimum Age to Join Activity"
  setting_min_activity_age_eight:0 "8"
@@ -73,7 +73,7 @@
  setting_monument_expedition_unlock_none:0 "No Requirements"
  setting_monument_expedition_unlock_none_desc:0 "The [GetActivityType('activity_journey').GetName] activity does not have any requirements to unlock."
 
- rule_tour_admin_unlock:0 "[GetActivityType('activity_journey').GetName] Unlock for [government_bureaucratic_type|E] [governments|E]"
+ rule_tour_admin_unlock:0 "[GetActivityType('activity_tour').GetName] Unlock for [government_bureaucratic_type|E] [governments|E]"
  setting_tour_admin_unlock_no:0 "Locked"
  setting_tour_admin_unlock_no_desc:0 "[government_bureaucratic_type|E] [governments|E] do not have access to the [GetActivityType('activity_tour').GetName] activity. (This is the game default.)"
  setting_tour_admin_unlock_yes:0 "Unlocked"
@@ -109,7 +109,7 @@
  setting_adventurer_roaming_unlock_free:0 "Free"
  setting_adventurer_roaming_unlock_free_desc:0 "Roaming requirements of the [GetDecisionWithKey('become_landless_adventurer_decision').GetName] [decision|E] are lifted for everyone."
  
- rule_adventurer_domain_unlock:0 "[GetDecisionWithKey('become_landless_adventurer_decision').GetName] Roaming Unlock"
+ rule_adventurer_domain_unlock:0 "[GetDecisionWithKey('become_landless_adventurer_decision').GetName] Domain Unlock"
  setting_adventurer_domain_unlock_default:0 "Default"
  setting_adventurer_domain_unlock_default_desc:0 "The [GetDecisionWithKey('become_landless_adventurer_decision').GetName] [decision|E] requires a maximum [domain|E] size of 3. (This is the game default.)"
  setting_adventurer_domain_unlock_extreme_scaled:0 "Extreme Scaled"
