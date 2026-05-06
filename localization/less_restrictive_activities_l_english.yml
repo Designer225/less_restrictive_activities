@@ -122,3 +122,13 @@
  setting_adventurer_domain_unlock_player_only_desc:0 "The [GetDecisionWithKey('become_landless_adventurer_decision').GetName] [decision|E] has a soft maximum [domain|E] size of 3. Beyond this point, only players have access to this decision while AIs cannot take this decision."
  setting_adventurer_domain_unlock_free:0 "Free"
  setting_adventurer_domain_unlock_free_desc:0 "#N (Highly not recommended!)#! The [domain|E] requirement of the [GetDecisionWithKey('become_landless_adventurer_decision').GetName] [decision|E] is lifted."
+
+ rule_activity_cooldown_university:0 "[GetDecisionWithKey('activity_adult_education').GetName] Cooldown"
+ setting_activity_cooldown_university_five:0 "5"
+ setting_activity_cooldown_university_five_desc:0 "[GetDecisionWithKey('activity_adult_education').GetName] has a 5-year cooldown."
+ setting_activity_cooldown_university_ten:0 "10"
+ setting_activity_cooldown_university_ten_desc:0 "[GetDecisionWithKey('activity_adult_education').GetName] has a 10-year cooldown."
+ setting_activity_cooldown_university_fifteen:0 "15"
+ setting_activity_cooldown_university_fifteen_desc:0 "[GetDecisionWithKey('activity_adult_education').GetName] has a 15-year cooldown."
+ setting_activity_cooldown_university_twenty:0 "20"
+ setting_activity_cooldown_university_twenty_desc:0 "[GetDecisionWithKey('activity_adult_education').GetName] has a 20-year cooldown. (This is the game default.)"

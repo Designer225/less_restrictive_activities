@@ -206,3 +206,19 @@ become_adventurer_domain_piety_cost = {
 		multiply = 0
 	}
 }
+
+activity_cooldown_university = {
+	value = 20
+	if = {
+		limit = { has_game_rule = activity_cooldown_university_five }
+		value = 5
+	}
+	else_if = {
+		limit = { has_game_rule = activity_cooldown_university_ten }
+		value = 10
+	}
+	else_if = {
+		limit = { has_game_rule = activity_cooldown_university_fifteen }
+		value = 15
+	}
+}

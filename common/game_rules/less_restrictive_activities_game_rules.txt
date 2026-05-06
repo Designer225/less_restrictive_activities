@@ -99,3 +99,12 @@ adventurer_domain_unlock = {
 	adventurer_domain_unlock_player_only = {}
 	adventurer_domain_unlock_free = {}
 }
+
+activity_cooldown_university = {
+	categories = { tweaks less_restrictive_activities }
+	default = activity_cooldown_university_twenty
+	activity_cooldown_university_five = {}
+	activity_cooldown_university_ten = {}
+	activity_cooldown_university_fifteen = {}
+	activity_cooldown_university_twenty = {}
+}
