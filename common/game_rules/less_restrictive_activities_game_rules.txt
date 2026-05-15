@@ -100,6 +100,15 @@ adventurer_domain_unlock = {
 	adventurer_domain_unlock_free = {}
 }
 
+activity_cooldown_mult = {
+	categories = { tweaks less_restrictive_activities }
+	default = activity_cooldown_default
+	activity_cooldown_mult_quarter = {}
+	activity_cooldown_mult_half = {}
+	activity_cooldown_mult_three_quarters = {}
+	activity_cooldown_mult_default = {}
+}
+
 activity_cooldown_university = {
 	categories = { tweaks less_restrictive_activities }
 	default = activity_cooldown_university_twenty

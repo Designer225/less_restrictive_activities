@@ -207,6 +207,22 @@ become_adventurer_domain_piety_cost = {
 	}
 }
 
+activity_cooldown_mult = {
+	value = 1
+	if = {
+		limit = { has_game_rule = activity_cooldown_mult_quarter }
+		value = 0.25
+	}
+	else_if = {
+		limit = { has_game_rule = activity_cooldown_mult_half }
+		value = 0.5
+	}
+	else_if = {
+		limit = { has_game_rule = activity_cooldown_mult_three_quarters }
+		value = 0.75
+	}
+}
+
 activity_cooldown_university = {
 	value = 20
 	if = {
@@ -221,4 +237,9 @@ activity_cooldown_university = {
 		limit = { has_game_rule = activity_cooldown_university_fifteen }
 		value = 15
 	}
+}
+
+decision_cooldown_silk_road_market = {
+	value = 10
+	multiply = activity_cooldown_mult
 }

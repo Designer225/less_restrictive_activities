@@ -123,6 +123,16 @@
  setting_adventurer_domain_unlock_free:0 "Free"
  setting_adventurer_domain_unlock_free_desc:0 "#N (Highly not recommended!)#! The [domain|E] requirement of the [GetDecisionWithKey('become_landless_adventurer_decision').GetName] [decision|E] is lifted."
 
+ rule_activity_cooldown_mult:0 "[activity|E] Cooldown Multiplier"
+ setting_activity_cooldown_mult_quarter:0 "1/4 x"
+ setting_activity_cooldown_mult_quarter_desc:0 "[activities|E] have their cooldown reduced by 75%."
+ setting_activity_cooldown_mult_half:0 "1/2 x"
+ setting_activity_cooldown_mult_half_desc:0 "[activities|E] have their cooldown reduced by 50%."
+ setting_activity_cooldown_mult_three_quarters:0 "3/4 x"
+ setting_activity_cooldown_mult_three_quarters_desc:0 "[activities|E] have their cooldown reduced by 25%."
+ setting_activity_cooldown_mult_default:0 "Default"
+ setting_activity_cooldown_mult_default_desc:0 "[activities|E] have their default cooldown. (This is the game default.)"
+
  rule_activity_cooldown_university:0 "[GetActivityType('activity_adult_education').GetName] Cooldown"
  setting_activity_cooldown_university_five:0 "5"
  setting_activity_cooldown_university_five_desc:0 "[GetActivityType('activity_adult_education').GetName] has a 5-year cooldown."
