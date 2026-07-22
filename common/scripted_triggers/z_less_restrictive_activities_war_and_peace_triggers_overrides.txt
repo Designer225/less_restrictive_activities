@@ -1,0 +1,122 @@
+
+can_be_warrior_trigger = {
+	is_available_quick = {
+		# adult = yes
+		imprisoned = no
+		incapable = no
+	}
+	OR = {
+		is_adult = yes
+		AND = {
+			is_old_enough_to_fight = yes
+			prowess >= 10
+		}
+	}
+	tgp_is_ceremonial_liege_trigger = no
+	OR = {
+		can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $ARMY_OWNER$ }
+		AND = {
+			$ARMY_OWNER$.culture = { has_cultural_parameter = high_prowess_ignores_knight_restrictions }
+			prowess >= 10
+		}
+		# Japan Onna-musha
+		trigger_if = {
+			limit = {
+				#not for admin
+				$ARMY_OWNER$ = {
+					NOT = {
+						government_allows = administrative 
+					}
+					culture = { has_cultural_parameter = non_admin_close_family_non_martial_gender_knights_in_defensive_wars }
+				}
+				culture = { has_cultural_parameter = non_admin_close_family_non_martial_gender_knights_in_defensive_wars }
+			}
+			AND = {
+				$ARMY_OWNER$ = { is_at_war_as_defender = yes }
+				OR = {
+					is_spouse_of = $ARMY_OWNER$
+					AND = {
+						is_close_family_of = $ARMY_OWNER$
+						is_married = no
+					}
+				}
+			}
+		}
+	}
+}
+
+# If you update one of the available triggers, update all of them. It's a lot better for performance to not have scripted triggers within scripted triggers when they're checked as often as these ones are.
+can_be_commander_basic_trigger = {
+	is_available_quick = {
+		alive = yes
+		# adult = yes
+		incapable = no
+		hostage = no
+	}
+	OR = {
+		is_adult = yes
+		AND = {
+			is_old_enough_to_fight = yes
+			martial >= 10
+		}
+	}
+	NAND = {
+		is_clergy = yes
+		NOR = {
+			has_trait = order_member # Order Members will fight for their faith even if their faith says no
+			faith = { has_doctrine_parameter = clergy_can_fight }
+			culture = { has_cultural_parameter = culture_clergy_can_fight }
+		}
+	}
+
+	OR = { # You can always lead your own armies
+		this = $ARMY_OWNER$
+		can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $ARMY_OWNER$ }
+	}
+
+	trigger_if = {
+		limit = { $ARMY_OWNER$ = { is_ai = yes } }
+		is_ai = yes
+		highest_held_title_tier < tier_hegemony
+	}
+}
+
+# If you update one of the available triggers, update all of them. It's a lot better for performance to not have scripted triggers within scripted triggers when they're checked as often as these ones are.
+can_be_commander_now_trigger = {
+	is_available_quick = {
+		alive = yes
+		# adult = yes
+		imprisoned = no
+		travel = no
+	}
+	OR = {
+		is_adult = yes
+		AND = {
+			is_old_enough_to_fight = yes
+			martial >= 10
+		}
+	}
+
+	OR = { # You can always lead your own armies
+		this = $ARMY_OWNER$
+		can_be_combatant_based_on_gender_trigger = { ARMY_OWNER = $ARMY_OWNER$ }
+	}
+
+	trigger_if = {
+		limit = { $ARMY_OWNER$ = { is_ai = yes } }
+		is_ai = yes
+	}
+
+	custom_description = {
+		text = ALREADY_IN_ACTIVITY
+		NOR = {
+			exists = involved_activity
+			has_variable = homage_liege_scope
+			has_character_flag = meditation_character_flag
+			has_character_flag = local_shrine_rite
+			has_character_flag = petition_liege_character_flag
+			has_character_flag = holding_court_character_flag
+			is_being_visited_on_tour_strict = yes
+		}
+	}
+}

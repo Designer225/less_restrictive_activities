@@ -232,7 +232,7 @@ activity_funeral = {
 		}
 	}
 
-	cooldown = { years = standard_funeral_cooldown_time }
+	cooldown = { years = activity_cooldown_funeral }
 
 	# desc is only shown in debug AI watch window
 	ai_will_do = {

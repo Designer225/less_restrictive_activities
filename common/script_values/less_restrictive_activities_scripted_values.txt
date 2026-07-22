@@ -210,6 +210,14 @@ become_adventurer_domain_piety_cost = {
 activity_cooldown_mult = {
 	value = 1
 	if = {
+		limit = { has_game_rule = activity_cooldown_mult_tenth }
+		value = 0.1
+	}
+	else_if = {
+		limit = { has_game_rule = activity_cooldown_mult_fifth }
+		value = 0.2
+	}
+	else_if = {
 		limit = { has_game_rule = activity_cooldown_mult_quarter }
 		value = 0.25
 	}
@@ -221,6 +229,61 @@ activity_cooldown_mult = {
 		limit = { has_game_rule = activity_cooldown_mult_three_quarters }
 		value = 0.75
 	}
+}
+
+activity_cooldown_18_months = {
+	value = 18
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_2_years = {
+	value = 2
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_3_years = {
+	value = 3
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_5_years = {
+	value = 5
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_10_years = {
+	value = 10
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_camp_party = {
+	value = standard_camp_party_cooldown_time
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_feast = {
+	value = standard_feast_cooldown_time
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_funeral = {
+	value = standard_funeral_cooldown_time
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_gruesome_festival = {
+	value = hold_gruesome_festival_decision_value
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_hunt = {
+	value = standard_hunting_cooldown_time
+	multiply = activity_cooldown_mult
+}
+
+activity_cooldown_playdate = {
+	value = standard_playdate_cooldown_time
+	multiply = activity_cooldown_mult
 }
 
 activity_cooldown_university = {
@@ -237,9 +300,82 @@ activity_cooldown_university = {
 		limit = { has_game_rule = activity_cooldown_university_fifteen }
 		value = 15
 	}
+	multiply = activity_cooldown_mult
 }
 
-decision_cooldown_silk_road_market = {
-	value = 10
+activity_cooldown_witch_ritual = {
+	value = standard_witch_ritual_cooldown_time
 	multiply = activity_cooldown_mult
+}
+
+min_council_age = {
+	value = 16
+	if = {
+		limit = { has_game_rule = min_council_age_eight }
+		value = 8
+	}
+	else_if = {
+		limit = { has_game_rule = min_council_age_nine }
+		value = 9
+	}
+	else_if = {
+		limit = { has_game_rule = min_council_age_ten }
+		value = 10
+	}
+	else_if = {
+		limit = { has_game_rule = min_council_age_eleven }
+		value = 11
+	}
+	else_if = {
+		limit = { has_game_rule = min_council_age_twelve }
+		value = 12
+	}
+	else_if = {
+		limit = { has_game_rule = min_council_age_thirteen }
+		value = 13
+	}
+	else_if = {
+		limit = { has_game_rule = min_council_age_fourteen }
+		value = 14
+	}
+	else_if = {
+		limit = { has_game_rule = min_council_age_fifteen }
+		value = 15
+	}
+}
+
+min_fighting_age = {
+	value = 16
+	if = {
+		limit = { has_game_rule = min_fighting_age_eight }
+		value = 8
+	}
+	else_if = {
+		limit = { has_game_rule = min_fighting_age_nine }
+		value = 9
+	}
+	else_if = {
+		limit = { has_game_rule = min_fighting_age_ten }
+		value = 10
+	}
+	else_if = {
+		limit = { has_game_rule = min_fighting_age_eleven }
+		value = 11
+	}
+	else_if = {
+		limit = { has_game_rule = min_fighting_age_twelve }
+		value = 12
+	}
+	else_if = {
+		limit = { has_game_rule = min_fighting_age_thirteen }
+		value = 13
+	}
+	else_if = {
+		limit = { has_game_rule = min_fighting_age_fourteen }
+		value = 14
+	}
+	else_if = {
+		limit = { has_game_rule = min_fighting_age_fifteen }
+		value = 15
+	}
 }

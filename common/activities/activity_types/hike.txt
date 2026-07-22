@@ -307,7 +307,7 @@
 		}
 	}
 
-	cooldown = { months = 18 }
+	cooldown = { months = activity_cooldown_18_months }
 
 	###################
 	# PHASES AND OPTIONS

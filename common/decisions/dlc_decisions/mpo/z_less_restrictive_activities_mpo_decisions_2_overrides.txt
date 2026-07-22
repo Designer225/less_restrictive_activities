@@ -1,0 +1,63 @@
+
+# Settle as a Nomad for an Adventurer
+### Adopt the Nomadic Ways ###
+adopt_nomadic_ways_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/event_story/mpo_steppe_region.dds"
+	}
+	decision_group_type = adventurer
+	sort_order = 100
+	
+	is_shown = {
+		has_mpo_dlc_trigger = yes
+		has_ep3_dlc_trigger = yes
+		is_landless_adventurer = yes
+	}
+	
+	is_valid = {
+		custom_tooltip = {
+			text = adopt_nomadic_ways_decision_herder_tt
+			location.county.holder = { has_government = herder_government }
+		}
+	}
+	
+	is_valid_showing_failures_only = {
+		is_available_and_old_enough_to_start_activity = yes
+	}
+
+	cost = {
+		prestige = massive_prestige_value
+	}
+	
+	effect = {
+		show_as_tooltip = {
+			adopt_nomadic_ways_decision_effect = yes
+		}
+		trigger_event = mpo_decisions_events.0120
+	}
+	
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 36
+		kingdom = 0
+		empire = 0
+		hegemony = 0
+	}
+	
+	ai_potential = {
+		government_has_flag = government_is_landless_adventurer
+	}
+
+	ai_will_do = {
+		base = 100
+		modifier = {
+			factor = 2
+			has_trait = zealous
+		}
+		modifier = {
+			factor = 0
+			has_trait = cynical
+		}
+	}
+}

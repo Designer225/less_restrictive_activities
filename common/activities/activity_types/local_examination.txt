@@ -413,7 +413,7 @@
 
 	is_single_location = yes
 
-	cooldown = { years = 3 }
+	cooldown = { years = activity_cooldown_3_years }
 
 	max_province_icons = 3
 

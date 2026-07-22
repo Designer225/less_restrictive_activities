@@ -800,7 +800,7 @@
 		}
 	}
 
-	cooldown = { years = 10 }
+	cooldown = { years = activity_cooldown_10_years }
 
 	###################
 	# OPTIONS

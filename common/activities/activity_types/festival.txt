@@ -176,7 +176,7 @@
 		}
 	}
 
-	cooldown = { years = standard_festival_cooldown_time }
+	cooldown = { years = activity_cooldown_feast }
 
 	###################
 	# PHASES

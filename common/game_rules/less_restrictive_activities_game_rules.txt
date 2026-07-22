@@ -102,7 +102,9 @@ adventurer_domain_unlock = {
 
 activity_cooldown_mult = {
 	categories = { tweaks less_restrictive_activities }
-	default = activity_cooldown_default
+	default = activity_cooldown_mult_default
+	activity_cooldown_mult_tenth = {}
+	activity_cooldown_mult_fifth = {}
 	activity_cooldown_mult_quarter = {}
 	activity_cooldown_mult_half = {}
 	activity_cooldown_mult_three_quarters = {}
@@ -116,4 +118,32 @@ activity_cooldown_university = {
 	activity_cooldown_university_ten = {}
 	activity_cooldown_university_fifteen = {}
 	activity_cooldown_university_twenty = {}
+}
+
+min_council_age = {
+	categories = { tweaks less_restrictive_activities }
+	default = min_council_age_sixteen
+	min_council_age_eight = {}
+	min_council_age_nine = {}
+	min_council_age_ten = {}
+	min_council_age_eleven = {}
+	min_council_age_twelve = {}
+	min_council_age_thirteen = {}
+	min_council_age_fourteen = {}
+	min_council_age_fifteen = {}
+	min_council_age_sixteen = {}
+}
+
+min_fighting_age = {
+	categories = { tweaks less_restrictive_activities }
+	default = min_fighting_age_sixteen
+	min_fighting_age_eight = {}
+	min_fighting_age_nine = {}
+	min_fighting_age_ten = {}
+	min_fighting_age_eleven = {}
+	min_fighting_age_twelve = {}
+	min_fighting_age_thirteen = {}
+	min_fighting_age_fourteen = {}
+	min_fighting_age_fifteen = {}
+	min_fighting_age_sixteen = {}
 }

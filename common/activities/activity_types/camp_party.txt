@@ -94,7 +94,7 @@
 		}
 	}
 
-	cooldown = { years = standard_camp_party_cooldown_time	}
+	cooldown = { years = activity_cooldown_camp_party	}
 
 	###################
 	# PHASES AND OPTIONS

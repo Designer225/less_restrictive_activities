@@ -7,7 +7,7 @@ visit_silk_road_market_decision = {
 	desc = visit_silk_road_market_decision_desc
 	selection_tooltip = visit_silk_road_market_decision_tooltip
 
-	cooldown = { years = decision_cooldown_silk_road_market }
+	cooldown = { years = activity_cooldown_10_years }
 
 	ai_check_interval_by_tier = {
 		barony = 0

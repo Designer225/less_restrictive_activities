@@ -1,0 +1,26 @@
+
+can_be_councillor_basics_trigger = {
+	AND = {
+		is_available_quick = {
+			# adult = yes
+			incapable = no
+			imprisoned = no
+		}
+		OR = {
+			is_adult = yes
+			AND = {
+				is_old_enough_to_join_council = yes
+				highest_skill_value >= 10
+			}
+		}
+	}
+	is_at_war_with_liege = no
+	trigger_if = {
+		limit = { has_variable = block_hire_councillor }
+		NOT = { var:block_hire_councillor = liege }
+	}
+	custom_tooltip = {
+		text = not_travel_option_character
+		NOT = { has_character_flag = travel_option_added_character }
+	}
+}

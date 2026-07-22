@@ -367,7 +367,7 @@
 		}
 	}
 
-	cooldown = { years = 2 }
+	cooldown = { years = activity_cooldown_2_years }
 
 	###################
 	# PHASES

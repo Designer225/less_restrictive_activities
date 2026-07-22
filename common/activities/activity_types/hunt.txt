@@ -236,7 +236,7 @@
 		}
 	}
 
-	cooldown = { years = standard_hunting_cooldown_time } # 4 years
+	cooldown = { years = activity_cooldown_hunt } # 4 years
 
 	cost = {
 		herd = {

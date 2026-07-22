@@ -33,6 +33,14 @@ is_old_enough_to_start_less_restrictive_activity = {
 	age >= coronation_minimum_age_value
 }
 
+is_old_enough_to_join_council = {
+	age >= min_council_age
+}
+
+is_old_enough_to_fight = {
+	age >= min_fighting_age
+}
+
 ## activity-specific
 # inspection
 can_start_inspection = {

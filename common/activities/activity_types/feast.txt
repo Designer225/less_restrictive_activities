@@ -374,7 +374,7 @@ activity_feast = {
 		}
 	}
 
-	cooldown = { years = standard_feast_cooldown_time }
+	cooldown = { years = activity_cooldown_feast }
 
 	# desc is only shown in debug AI watch window
 	ai_will_do = {

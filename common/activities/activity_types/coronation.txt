@@ -467,7 +467,7 @@
 	}
 
 	cooldown = {
-		years = 3
+		years = activity_cooldown_3_years
 	}
 
 	ui_predicted_cost = {
